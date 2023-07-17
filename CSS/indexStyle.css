@@ -1,0 +1,415 @@
+/* start general */
+:root{
+    --main-color:#0078ff
+}
+.section-header{
+    text-align: center;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.section-header::before{
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color:var(--main-color);
+    bottom: -20%;
+    left: 49%;
+}
+.card-icon{
+    width: 8rem;
+    height: 8rem;
+    border: 10px solid var(--main-color);
+    transition: all 0.5s;
+}
+ .card:hover .card-icon{
+    background-color: var(--main-color);
+    border: 10px solid lavender;
+}
+ .card-icon i{
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+/* end general */
+
+/* nav */
+nav .nav-item {
+    width: fit-content;
+}
+nav .nav-item a{
+    position: relative;
+    width: fit-content;
+}
+nav .nav-item a::before{
+    content: " ";
+    width: 0%;
+    height:3px ;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0%;
+    transition: all 0.7s;
+
+}
+nav .nav-item a:hover::before{
+    content: " ";
+    width: 100%;
+}
+
+/* end nav */
+
+/* home */
+main{
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.content h3{
+    position: relative;
+}
+.content h3::after{
+    content: "|";
+    animation-name: animation;
+    animation-duration: 16s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes animation{
+    0%{
+        content: "F|";
+    }
+    2%{
+        content: "Fr|";
+    }
+    4%{
+        content: "Fre|";
+    }
+    6%{
+        content: "Free|";
+    }
+    8%{
+        content: "Freel|";
+    }
+    10%{
+        content: "Freela|";
+    }
+    12%{
+        content: "Freelan|";
+    }
+    14%{
+        content: "Freelanc|";
+    }
+    16%{
+        content: "Freelance|";
+    }
+    18%{
+        content: "Freelancer|";
+    }
+    20%{
+        content: "Freelance|";
+    }
+    22%{
+        content: "Freelanc|";
+    }
+    24%{
+        content: "Freelan|";
+    }
+    26%{
+        content: "Freela|";
+    }
+    28%{
+        content: "Freel|";
+    }
+    30%{
+        content: "Free|";
+    }
+    32%{
+        content: "Fre|";
+    }
+    34%{
+        content: "Fr|";
+    }
+    36%{
+        content: "F|";
+    }
+    37%{
+        content: "|";
+    }
+    38%{
+        content: "D|";
+    }
+    40%{
+        content: "De|";
+    }
+    42%{
+        content: "Des|";
+    }
+    44%{
+        content: "Desi|";
+    }
+    46%{
+        content: "Desig|";
+    }
+    48%{
+        content: "Design|";
+    }
+    50%{
+        content: "Designe|";
+    }
+    52%{
+        content: "Designer|";
+    }
+    54%{
+        content: "Designe|";
+    }
+    56%{
+        content: "Design|";
+    }
+    57%{
+        content: "Desig|";
+    }
+    58%{
+        content: "Desi|";
+    }
+    59%{
+        content: "Des|";
+    }
+    60%{
+        content: "De|";
+    }
+    61%{
+        content: "Dev|";
+    }
+    62%{
+        content: "Deve|";
+    }
+    63%{
+        content: "Devel|";
+    }
+    64%{
+        content: "Develo|";
+    }
+    65%{
+        content: "Develop|";
+    }
+    66%{
+        content: "Develope|";
+    }
+    67%{
+        content: "Developer|";
+    }
+    68%{
+        content: "Develope|";
+    }
+    69%{
+        content: "Develop|";
+    }
+    70%{
+        content: "Develo|";
+    }
+    71%{
+        content: "Devel|";
+    }
+    72%{
+        content: "Deve|";
+    }
+    73%{
+        content: "Dev|";
+    }
+    74%{
+        content: "De|";
+    }
+    75%{
+        content: "D|";
+    }
+    76%{
+        content: "|";
+    }
+    77%{
+        content: "P|";
+    }
+    78%{
+        content: "Ph|";
+    }
+    79%{
+        content: "Pho|";
+    }
+    80%{
+        content: "Phot|";
+    }
+    81%{
+        content: "Photo|";
+    }
+    82%{
+        content: "Photog|";
+    }
+    83%{
+        content: "Photogr|";
+    }
+    84%{
+        content: "Photogra|";
+    }
+    85%{
+        content: "Photograp|";
+    }
+    86%{
+        content: "Photograph|";
+    }
+    87%{
+        content: "Photographe|";
+    }
+    88%{
+        content: "Photographer|";
+    }
+    89%{
+        content: "Photographe|";
+    }
+    90%{
+        content: "Photograph|";
+    }
+    91%{
+        content: "Photograp|";
+    }
+    92%{
+        content: "Photogra|";
+    }
+    93%{
+        content: "Photogr|";
+    }
+    94%{
+        content: "Photog|";
+    }
+    95%{
+        content: "Photo|";
+    }
+    96%{
+        content: "Phot|";
+    }
+    97%{
+        content: "Pho|";
+    }
+    98%{
+        content: "Ph|";
+    }
+    99%{
+        content: "P|";
+    }
+    100%{
+        content: "|";
+    }
+    
+}
+/* end home */
+
+/* start about */
+.About .section-header{
+    text-align: left;
+}
+.About .section-header::before{
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 0.3rem;
+    background-color:var(--main-color);
+    bottom: -20%;
+    left:0%;
+}
+/* end about */
+
+/* services */
+.Services .card:hover i{
+    color: white;
+}
+/* end Services*/
+
+/* count */
+.count{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* end count */
+
+/* portfolio */
+.portfolio .container .card-body{
+   overflow: hidden;
+}
+.portfolio .container .card img{
+    transition: all 0.5s;
+}
+.portfolio .container .card:hover img{
+    transform: scale(1.3);
+}
+.portfolio .container .card .card-body .card-i{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+/* end portfolio */
+/* slider */
+.slider {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slider.carousel-inner .carousel-item img{
+    width: 3rem;
+    height: 3rem;
+}
+.slider .carousel-indicators button{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+/* end slider */
+/* blog */
+.Blog .card-footer img{
+    height: 2rem;
+    width: 2rem;
+}
+/* contact */
+.contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contact .section-headeR{ 
+    text-align: left;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.contact .section-header::before{ 
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 0.2rem;
+    background-color:var(--main-color);
+    bottom: -20%;
+    left: 0%;
+}
+.conatct .contact-btn button{
+    transition: all 0.5s;
+}
+.contact .contact-btn button:hover{
+    box-shadow: 0 0 0 4px lavender ;
+}
+.contact .card-icon{
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--main-color);
+    transition: all 0.5s;
+}
+.contact .card:hover .card-icon{
+    background-color: var(--main-color);
+    border: 10px solid lavender;
+}
+.contact .card-icon i{
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+/* end contact */
+/* footer */
